@@ -1,0 +1,34 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+/* CSS style for the header 
+have a height of 400px, 100% width
+*/
+
+header {
+  height: 520px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #008c8c;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-repeat: repeat;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
