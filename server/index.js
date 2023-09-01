@@ -35,3 +35,8 @@ app.use("/tweets", tweetsRoutes);
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
 });
+
+//test tweet using this:
+//curl -X POST -d 'text=...' -H "Content-Type: application/x-www-form-urlencoded" http://127.0.0.1:8080/tweets
+//verify at:
+//http://localhost:8080/tweets 

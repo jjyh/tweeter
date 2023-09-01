@@ -1,0 +1,42 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+/* CSS style for the tweeter form 
+*/
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex; 
+  flex-direction: column;
+  width: 75%; 
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: blue;
+  color: white;
+  font-family: 'Bungee';
+}
+
+#tweet-text {
+  opacity: 30%;
+  border-bottom: 5px solid black;
+}
+
+.counter {
+  float: right;
+  font-family: 'Bungee';
+  color: black;
+}
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
