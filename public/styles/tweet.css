@@ -1,0 +1,82 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+/* CSS style for the tweeter form 
+*/
+
+#past-tweet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.tweet-header {
+  display: flex;
+  width: 95%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  margin: 1em;
+}
+
+.name-left {
+  display: flex;
+}
+
+.name-right {
+  opacity: .5;
+}
+
+.tweet-header img {
+  max-height: 3em;
+  max-width: 3em;
+}
+
+.tweet {
+  width: 95%;
+  margin: 1em;
+  border: 5px solid #534c39;
+  word-wrap: break-word;
+}
+
+.tweet:hover {
+  box-shadow: 5px 9px #534c39;
+}
+
+.posted-tweet {
+  width: 95%;
+  margin: 1em;
+  word-wrap: break-word;
+  border-bottom: 5px solid #534c39;
+  line-height: 2;
+}
+
+.tweet footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: stretch;
+  margin: 0.5em;
+}
+
+.icon {
+  display: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  width: 5vw;
+  margin-right: 0.5rem;
+}
+
+.icons i:hover{
+  cursor: pointer;
+  color: goldenrod;
+}
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */

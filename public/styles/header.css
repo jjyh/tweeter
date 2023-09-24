@@ -7,7 +7,7 @@
 have a height of 400px, 100% width
 */
 
-header {
+.page-header {
   height: 520px;
   padding-top: 120px;
   width: 100%;
