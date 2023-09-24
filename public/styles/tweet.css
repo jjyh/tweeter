@@ -6,7 +6,7 @@
 /* CSS style for the tweeter form 
 */
 
-#past-tweet {
+section#tweets-container {
   display: flex;
   flex-direction: column;
   align-items: center;
