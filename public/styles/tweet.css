@@ -77,6 +77,19 @@ section#tweets-container {
   color: goldenrod;
 }
 
+.error-msg {
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  font-size: 30px;
+  border: 2px solid red;
+  padding: 10px;
+}
+
+.fa-exclamation-triangle {
+margin-left: 3px;
+margin-right: 3px;
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

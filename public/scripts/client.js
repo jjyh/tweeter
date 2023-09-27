@@ -32,6 +32,10 @@ $(document).ready(function() {
   //   }
   // ]
 
+//upon loading do not show errors
+$("#error-msg-empty").hide();
+$("#error-msg-long").hide();
+
 // prevent cross-scripting escape text function from LHL example
 const escape = function (str) {
   let div = document.createElement("div");
@@ -96,16 +100,25 @@ const escape = function (str) {
   $("#new-tweet-form").submit(function(event) {
     event.preventDefault();
 
+    //hide errors upon submittal first
+    $("#error-msg-empty").hide();
+    $("#error-msg-long").hide();
+
     const inputLength = $(this).find("#tweet-text").val().length;    
     if (!inputLength) {
-      return alert("Please enter text to tweet");
+      //return alert("Please enter text to tweet");
+      $("#error-msg-empty").slideDown();
+      $("#error-msg-long").hide();
     } if (inputLength > 140) {
-      return alert("Please shorten the tweet to within 140 character");
-    } 
+      //return alert("Please shorten the tweet to within 140 character");
+      $("#error-msg-empty").hide();
+      $("#error-msg-long").slideDown();
+    } else {
     const newTweet = $(this).serialize();
     $.post("/tweets/", newTweet, () => {
       loadTweets();
       });
+    }
   });
 
 });
