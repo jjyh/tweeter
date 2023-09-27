@@ -32,6 +32,12 @@ $(document).ready(function() {
   //   }
   // ]
 
+// prevent cross-scripting escape text function from LHL example
+const escape = function (str) {
+  let div = document.createElement("div");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 
    //appending tweets to #tweet-container for render 
   const renderTweets = function(tweets) {
@@ -61,7 +67,7 @@ $(document).ready(function() {
           </div>
         </header>
         <div class="posted-tweet">
-          ${tweet.content.text}
+          ${escape(tweet.content.text)}
         </div>
         <footer>
           <span class=""footer-left"">${timeago.format(tweet.created_at)}</span>
@@ -81,7 +87,7 @@ $(document).ready(function() {
   const loadTweets = function() {
     $.ajax("/tweets/", {method: "GET", dataType: "json",})
     .then((newTweet) => {
-      renderTweets(newTweet);
+      renderTweets(newTweet.reverse());
     });
   };
 
