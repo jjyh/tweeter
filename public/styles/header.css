@@ -8,7 +8,7 @@ have a height of 400px, 100% width
 */
 
 .page-header {
-  height: 520px;
+  display: flex;
   padding-top: 120px;
   width: 100%;
   flex-direction: column;
@@ -22,13 +22,40 @@ have a height of 400px, 100% width
 .avatar {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 120px;
+  max-height: 120px;
+  height: auto;
+  width: auto;
 }
 
 .avatar-name {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.3rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .page-header {
+    width: 50%;
+    height: 100%;
+    padding-top: 120px;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+  }
+  .avatar {
+    margin-top: 30px;
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .avatar-name {
+    margin-top: 30px;
+    font-size: 1.5rem;
+  }
 }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions

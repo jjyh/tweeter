@@ -5,8 +5,7 @@
  */
 /* CSS style for the tweeter form 
 */
-
-section#tweets-container {
+#tweets-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -87,9 +86,15 @@ section#tweets-container {
 }
 
 .fa-exclamation-triangle {
-margin-left: 3px;
-margin-right: 3px;
+margin-left: 6px;
+margin-right: 6px;
 }
+
+@media only screen and (min-width: 1024px) {
+  #tweets-container {
+      width: 50%;
+    }
+  }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

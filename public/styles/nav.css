@@ -23,6 +23,9 @@ nav {
 }
 
 #logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: 'Bungee';
 }
 
@@ -38,6 +41,16 @@ nav {
   padding-bottom: 12px;
 }
 
+
+@media only screen and (min-width: 1024px)  {
+  nav {
+    height: 120px;
+    margin-top: -30px;
+  }
+  .logo {
+    font-size: 5rem;
+  }
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
