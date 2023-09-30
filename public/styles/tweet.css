@@ -94,6 +94,9 @@ margin-right: 6px;
   #tweets-container {
       width: 50%;
     }
+  .error-msg {
+      width: 50%;
+    }
   }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
